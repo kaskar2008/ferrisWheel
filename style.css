@@ -1,0 +1,124 @@
+/*
+Ferris Wheel 1.2 [slider]
+
+Copyright Kasparov Karen
+All rights reserved
+
+This is only demo and not for commercial use;
+*/
+
+body {
+    background-image: url('bg.jpg');
+}
+
+#slider1, #slider2, #slider3, #slider4, #slider5 {
+	width: 175px;
+	height: 125px;
+	position: absolute;
+	top: 250px;
+}
+
+#arrow_left {
+	width: 20px;
+	height: 30px;
+	position: absolute;
+	top: 505px;
+	left: 225px;
+    cursor: pointer;
+    z-index: 90;
+}
+
+#arrow_right {
+	width: 20px;
+	height: 30px;
+	position: absolute;
+	top: 505px;
+	left: 315px;
+    cursor: pointer;
+    z-index: 90;
+}
+
+#main {
+    position: fixed;
+	min-height: 480px;
+	min-width: 640px;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 90;
+	cursor: pointer;
+	/*background: url(logo.png);*/
+}
+
+#clickable_item {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    display: block;
+    z-index: 90;
+    cursor: pointer;
+}
+
+#p_window {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 0px;
+    left:  0px;
+    border: solid 1px black;
+    z-index: 95;
+    display: none;
+	background: url('bg.jpg');
+}
+
+#p_header {
+    height: 25px;
+    padding-left: 10px;
+    background: url('header_bg.gif') repeat-x;
+}
+
+#p_close {
+    width: 22px;
+    height: 22px;
+    float: right;
+    margin-right: 5px;
+    background-image: url('dialog-close.png');
+    background-position: bottom;
+    cursor: pointer;
+}
+
+#p_content {
+    padding: 5px;
+    width: 495px;
+    height: 470px;
+    background: #ffffff;
+    overflow:auto;
+	background: url('bg.jpg');
+}
+
+#loading {
+	width: 220px;
+    height: 19px;
+    position: absolute;
+    top: 30px;
+    background: url('loading.gif');
+    display: none;
+}
+
+#shadow {
+    background: #000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: -1px;
+    top: -1px;
+    display: none;
+    z-index: 93;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70); /* IE 5.5+*/
+ 	-moz-opacity: 0.7; /* Mozilla 1.6 и ниже */
+ 	-khtml-opacity: 0.7; /* Konqueror 3.1, Safari 1.1 */
+ 	opacity: 0.7; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9+ */
+}
